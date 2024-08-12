@@ -1,0 +1,235 @@
+/* Global */
+
+.source-sans-font{
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.btn{
+    background-color: #04bc9c;
+    border: none;
+}
+.btn-small{
+    font-size: 15px;
+}
+.section-heading{
+    font-weight: 700;
+    letter-spacing: 7px;
+    font-size: 50px;
+}
+.section-para{
+    font-weight: 300;
+    letter-spacing: 3px;
+    font-size: 20px;
+}
+.sub-heads{
+    font-weight: 800;
+    letter-spacing: 2px;
+    font-size: 30px;
+}
+.sub-paras{
+    font-weight: 8300;
+    letter-spacing: 2px;
+    font-size: 17px;
+}
+
+/* Navi Bar */
+#header-name{
+    font-size: 25px;
+    font-weight: 700;
+    color: black;
+    letter-spacing: 3px;
+}
+.nav-item a{
+    font-weight: 600;
+    color: black;
+    letter-spacing: 2px;
+}
+.icon-logo{
+    height: 40px;
+}
+/* Hero */
+.hero{
+    padding-top: 300px;
+    padding-bottom: 300px;
+    background-image: url(./images/simple-clean-background-8g9017acqfddycrl.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.hero-intro{
+    font-weight: 600;
+    font-size: 60px;
+    letter-spacing: 4px;
+}
+
+/* About Me */
+#about-content-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 180px;
+    margin: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+}
+.skills_skill{
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 10px 20px 10px 0px;
+}
+#learnt{
+    background-color: #04bc9c;
+    color: white;
+}
+#not-learnt{
+    background-color:lightgrey;
+}
+
+/* Projects */
+.gradient-background {
+    background: linear-gradient(300deg, #909090, #b1fff2, #dee2ff);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+.project{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+}
+.project img{
+    height: 300px;
+    border-radius: 5px;
+}
+
+/* Contacts */
+.contact-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    padding-right: 30px;
+    margin-bottom: 10px;
+}
+.contact-content div{
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 15px;
+    
+}
+.contact-title{
+    text-align: end;
+    color: #04bc9c;
+}
+.content-small-box{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-right: 50px;
+}
+
+/* Footer */
+footer{
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 12px;
+}
+
+/* Responsive */
+@media (max-width: 1200px){
+    .hero{
+        padding-top: 250px;
+        padding-bottom: 250px;
+    }
+
+    #about-content-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 80px;
+    }
+    .project{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+}
+@media (max-width: 1000px){
+    #header-name{
+        font-size: 20px;
+    }
+    .icon-logo{
+        height: 30px;
+    }
+    .nav-item a{
+        font-size: 14px;
+    }
+    
+    .hero{
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+    .hero-intro{
+        font-weight: 600;
+        font-size: 40px;
+        letter-spacing: 4px;
+    }
+    .lead{
+        font-size: 17px;
+    }
+    .btn{
+        font-size: 15px;
+    }
+
+    .section-heading{
+        font-size: 35px;
+    }
+    .section-para{
+        font-size: 18px;
+    }
+    .sub-heads{
+        font-size: 25px;
+    }
+    .sub-paras{
+        font-size: 15px;
+    }
+    #about-content-container{
+        padding: 0px;
+        gap: 50px;
+    }
+    .skills_skill{
+        font-weight: 400;
+        font-size: 15px;
+    }
+    .project-container{
+        text-align: center;
+    }
+    .project > div > div{
+        justify-content: center;
+    }
+
+
+    .contact-content{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 0px;
+    }
+    .contact-title{
+        text-align: center;
+        color: #04bc9c;
+    }
+    .contact-answer{
+        text-align: center;
+    }
+    .content-small-box{
+        padding-right: 0px;
+    }
+
+    .footer-text{
+        font-size: 8px;
+    }
+}
