@@ -103,9 +103,12 @@
     grid-template-columns: 1fr 1fr;
     gap: 100px;
 }
-.project img{
+.project-image{
     height: 300px;
     border-radius: 5px;
+}
+#all-projects-link{
+    color: #04bc9c;
 }
 
 /* Contacts */
@@ -156,6 +159,16 @@ footer{
         grid-template-columns: 1fr;
         gap: 10px;
     }
+    .project-container{
+        text-align: center;
+    }
+    .project > div > div{
+        justify-content: center;
+    }
+    .project-image{
+        width: 80%;
+        height: 100%;
+    }
 }
 @media (max-width: 1000px){
     #header-name{
@@ -204,12 +217,7 @@ footer{
         font-weight: 400;
         font-size: 15px;
     }
-    .project-container{
-        text-align: center;
-    }
-    .project > div > div{
-        justify-content: center;
-    }
+
 
 
     .contact-content{
